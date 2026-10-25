@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Spatial Inequality in Iran: Evidence from Provincial GDP and Nighttime Lights"
+type: software
+authors:
+  - family-names: Khalilzadeh
+    given-names: Armin
+    affiliation: "Sharif University of Technology"
+    email: arminkhalilzadeh@gmail.com
+repository-code: "https://github.com/arminkhalilzadeh/iran-ntl-regional-inequality"
+license: MIT
+date-released: 2026-10-25
+keywords:
+  - nighttime lights
+  - VIIRS
+  - spatial inequality
+  - regional inequality
+  - Iran
+  - economics
