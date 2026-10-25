@@ -1,0 +1,13 @@
+# Python 3.10+ (developed with Python 3.13)
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+adjustText
+geopandas
+statsmodels
+linearmodels
+openpyxl
+hbsir
+jupyter

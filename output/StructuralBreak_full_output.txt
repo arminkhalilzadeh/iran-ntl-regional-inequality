@@ -1,0 +1,435 @@
+===== Gini_NTL (N=13) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               Gini_NTL   R-squared:                       0.477
+Model:                            OLS   Adj. R-squared:                  0.302
+Method:                 Least Squares   F-statistic:                     2.731
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):              0.106
+Time:                        18:16:37   Log-Likelihood:                 32.043
+No. Observations:                  13   AIC:                            -56.09
+Df Residuals:                       9   BIC:                            -53.83
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.3698      0.018     20.665      0.000       0.329       0.410
+Trend           0.0150      0.006      2.537      0.032       0.002       0.028
+D2018           0.0167      0.047      0.358      0.729      -0.089       0.122
+D2018_Trend    -0.0111      0.008     -1.474      0.175      -0.028       0.006
+==============================================================================
+Omnibus:                        0.011   Durbin-Watson:                   1.834
+Prob(Omnibus):                  0.994   Jarque-Bera (JB):                0.218
+Skew:                           0.038   Prob(JB):                        0.897
+Kurtosis:                       2.371   Cond. No.                         67.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+===== GEm1_NTL (N=13) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               GEm1_NTL   R-squared:                       0.612
+Model:                            OLS   Adj. R-squared:                  0.482
+Method:                 Least Squares   F-statistic:                     4.726
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):             0.0302
+Time:                        18:16:37   Log-Likelihood:                 25.600
+No. Observations:                  13   AIC:                            -43.20
+Df Residuals:                       9   BIC:                            -40.94
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.2212      0.029      7.531      0.000       0.155       0.288
+Trend           0.0270      0.010      2.783      0.021       0.005       0.049
+D2018           0.0356      0.077      0.465      0.653      -0.138       0.209
+D2018_Trend    -0.0178      0.012     -1.442      0.183      -0.046       0.010
+==============================================================================
+Omnibus:                        0.070   Durbin-Watson:                   1.614
+Prob(Omnibus):                  0.966   Jarque-Bera (JB):                0.299
+Skew:                          -0.034   Prob(JB):                        0.861
+Kurtosis:                       2.260   Cond. No.                         67.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+===== MLD_NTL (N=13) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                MLD_NTL   R-squared:                       0.500
+Model:                            OLS   Adj. R-squared:                  0.334
+Method:                 Least Squares   F-statistic:                     3.002
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):             0.0876
+Time:                        18:16:37   Log-Likelihood:                 27.282
+No. Observations:                  13   AIC:                            -46.56
+Df Residuals:                       9   BIC:                            -44.30
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.2213      0.026      8.576      0.000       0.163       0.280
+Trend           0.0228      0.009      2.675      0.025       0.004       0.042
+D2018           0.0250      0.067      0.372      0.718      -0.127       0.177
+D2018_Trend    -0.0169      0.011     -1.559      0.153      -0.042       0.008
+==============================================================================
+Omnibus:                        0.057   Durbin-Watson:                   1.884
+Prob(Omnibus):                  0.972   Jarque-Bera (JB):                0.283
+Skew:                           0.057   Prob(JB):                        0.868
+Kurtosis:                       2.287   Cond. No.                         67.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+===== Theil_NTL (N=13) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              Theil_NTL   R-squared:                       0.431
+Model:                            OLS   Adj. R-squared:                  0.241
+Method:                 Least Squares   F-statistic:                     2.270
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):              0.149
+Time:                        18:16:37   Log-Likelihood:                 23.509
+No. Observations:                  13   AIC:                            -39.02
+Df Residuals:                       9   BIC:                            -36.76
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.2622      0.035      7.599      0.000       0.184       0.340
+Trend           0.0290      0.011      2.542      0.032       0.003       0.055
+D2018           0.0245      0.090      0.272      0.792      -0.179       0.228
+D2018_Trend    -0.0237      0.015     -1.629      0.138      -0.057       0.009
+==============================================================================
+Omnibus:                        0.466   Durbin-Watson:                   2.177
+Prob(Omnibus):                  0.792   Jarque-Bera (JB):                0.545
+Skew:                           0.292   Prob(JB):                        0.762
+Kurtosis:                       2.184   Cond. No.                         67.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+===== CV_NTL (N=13) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 CV_NTL   R-squared:                       0.427
+Model:                            OLS   Adj. R-squared:                  0.237
+Method:                 Least Squares   F-statistic:                     2.240
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):              0.153
+Time:                        18:16:37   Log-Likelihood:                 15.274
+No. Observations:                  13   AIC:                            -22.55
+Df Residuals:                       9   BIC:                            -20.29
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.8781      0.065     13.508      0.000       0.731       1.025
+Trend           0.0524      0.021      2.442      0.037       0.004       0.101
+D2018           0.0266      0.169      0.157      0.879      -0.357       0.410
+D2018_Trend    -0.0450      0.027     -1.644      0.135      -0.107       0.017
+==============================================================================
+Omnibus:                        0.654   Durbin-Watson:                   2.305
+Prob(Omnibus):                  0.721   Jarque-Bera (JB):                0.651
+Skew:                           0.318   Prob(JB):                        0.722
+Kurtosis:                       2.107   Cond. No.                         67.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+===== Gini_GDP (N=10) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               Gini_GDP   R-squared:                       0.637
+Model:                            OLS   Adj. R-squared:                  0.455
+Method:                 Least Squares   F-statistic:                     3.506
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):             0.0893
+Time:                        18:16:37   Log-Likelihood:                 30.385
+No. Observations:                  10   AIC:                            -52.77
+Df Residuals:                       6   BIC:                            -51.56
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.3558      0.011     32.853      0.000       0.329       0.382
+Trend           0.0072      0.004      2.025      0.089      -0.002       0.016
+D2018           0.0789      0.052      1.520      0.179      -0.048       0.206
+D2018_Trend    -0.0179      0.008     -2.357      0.057      -0.036       0.001
+==============================================================================
+Omnibus:                        0.760   Durbin-Watson:                   2.805
+Prob(Omnibus):                  0.684   Jarque-Bera (JB):                0.584
+Skew:                           0.132   Prob(JB):                        0.747
+Kurtosis:                       1.846   Cond. No.                         78.2
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+===== GEm1_GDP (N=10) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               GEm1_GDP   R-squared:                       0.666
+Model:                            OLS   Adj. R-squared:                  0.498
+Method:                 Least Squares   F-statistic:                     3.981
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):             0.0707
+Time:                        18:16:37   Log-Likelihood:                 28.268
+No. Observations:                  10   AIC:                            -48.54
+Df Residuals:                       6   BIC:                            -47.33
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.2157      0.013     16.113      0.000       0.183       0.248
+Trend           0.0103      0.004      2.321      0.059      -0.001       0.021
+D2018           0.1070      0.064      1.669      0.146      -0.050       0.264
+D2018_Trend    -0.0242      0.009     -2.579      0.042      -0.047      -0.001
+==============================================================================
+Omnibus:                        0.067   Durbin-Watson:                   2.816
+Prob(Omnibus):                  0.967   Jarque-Bera (JB):                0.296
+Skew:                           0.005   Prob(JB):                        0.862
+Kurtosis:                       2.157   Cond. No.                         78.2
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+===== MLD_GDP (N=10) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                MLD_GDP   R-squared:                       0.645
+Model:                            OLS   Adj. R-squared:                  0.467
+Method:                 Least Squares   F-statistic:                     3.627
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):             0.0840
+Time:                        18:16:37   Log-Likelihood:                 28.353
+No. Observations:                  10   AIC:                            -48.71
+Df Residuals:                       6   BIC:                            -47.50
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.2084      0.013     15.705      0.000       0.176       0.241
+Trend           0.0094      0.004      2.146      0.075      -0.001       0.020
+D2018           0.1064      0.064      1.674      0.145      -0.049       0.262
+D2018_Trend    -0.0234      0.009     -2.512      0.046      -0.046      -0.001
+==============================================================================
+Omnibus:                        0.319   Durbin-Watson:                   2.865
+Prob(Omnibus):                  0.852   Jarque-Bera (JB):                0.440
+Skew:                           0.206   Prob(JB):                        0.803
+Kurtosis:                       2.058   Cond. No.                         78.2
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+===== Theil_GDP (N=10) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              Theil_GDP   R-squared:                       0.615
+Model:                            OLS   Adj. R-squared:                  0.423
+Method:                 Least Squares   F-statistic:                     3.200
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):              0.105
+Time:                        18:16:37   Log-Likelihood:                 25.303
+No. Observations:                  10   AIC:                            -42.61
+Df Residuals:                       6   BIC:                            -41.40
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.2409      0.018     13.380      0.000       0.197       0.285
+Trend           0.0125      0.006      2.108      0.080      -0.002       0.027
+D2018           0.1490      0.086      1.727      0.135      -0.062       0.360
+D2018_Trend    -0.0314      0.013     -2.493      0.047      -0.062      -0.001
+==============================================================================
+Omnibus:                        0.706   Durbin-Watson:                   3.061
+Prob(Omnibus):                  0.703   Jarque-Bera (JB):                0.525
+Skew:                           0.470   Prob(JB):                        0.769
+Kurtosis:                       2.386   Cond. No.                         78.2
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+===== CV_GDP (N=10) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 CV_GDP   R-squared:                       0.578
+Model:                            OLS   Adj. R-squared:                  0.367
+Method:                 Least Squares   F-statistic:                     2.739
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):              0.136
+Time:                        18:16:37   Log-Likelihood:                 17.971
+No. Observations:                  10   AIC:                            -27.94
+Df Residuals:                       6   BIC:                            -26.73
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.8227      0.037     21.949      0.000       0.731       0.914
+Trend           0.0269      0.012      2.173      0.073      -0.003       0.057
+D2018           0.3133      0.180      1.745      0.132      -0.126       0.753
+D2018_Trend    -0.0640      0.026     -2.437      0.051      -0.128       0.000
+==============================================================================
+Omnibus:                        2.639   Durbin-Watson:                   3.336
+Prob(Omnibus):                  0.267   Jarque-Bera (JB):                0.988
+Skew:                           0.770   Prob(JB):                        0.610
+Kurtosis:                       3.035   Cond. No.                         78.2
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+===== Gini_Exp (N=13) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               Gini_Exp   R-squared:                       0.873
+Model:                            OLS   Adj. R-squared:                  0.831
+Method:                 Least Squares   F-statistic:                     20.69
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):           0.000224
+Time:                        18:16:37   Log-Likelihood:                 43.783
+No. Observations:                  13   AIC:                            -79.57
+Df Residuals:                       9   BIC:                            -77.31
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.1611      0.007     22.215      0.000       0.145       0.178
+Trend           0.0071      0.002      2.981      0.015       0.002       0.013
+D2018          -0.0145      0.019     -0.769      0.462      -0.057       0.028
+D2018_Trend     0.0003      0.003      0.088      0.932      -0.007       0.007
+==============================================================================
+Omnibus:                        2.704   Durbin-Watson:                   2.438
+Prob(Omnibus):                  0.259   Jarque-Bera (JB):                0.887
+Skew:                           0.599   Prob(JB):                        0.642
+Kurtosis:                       3.449   Cond. No.                         67.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+===== GEm1_Exp (N=13) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               GEm1_Exp   R-squared:                       0.819
+Model:                            OLS   Adj. R-squared:                  0.759
+Method:                 Least Squares   F-statistic:                     13.60
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):            0.00108
+Time:                        18:16:37   Log-Likelihood:                 47.909
+No. Observations:                  13   AIC:                            -87.82
+Df Residuals:                       9   BIC:                            -85.56
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.0440      0.005      8.329      0.000       0.032       0.056
+Trend           0.0048      0.002      2.776      0.022       0.001       0.009
+D2018          -0.0074      0.014     -0.535      0.606      -0.039       0.024
+D2018_Trend    -0.0005      0.002     -0.228      0.825      -0.006       0.005
+==============================================================================
+Omnibus:                        4.995   Durbin-Watson:                   2.514
+Prob(Omnibus):                  0.082   Jarque-Bera (JB):                2.006
+Skew:                           0.822   Prob(JB):                        0.367
+Kurtosis:                       4.000   Cond. No.                         67.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+===== MLD_Exp (N=13) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                MLD_Exp   R-squared:                       0.814
+Model:                            OLS   Adj. R-squared:                  0.752
+Method:                 Least Squares   F-statistic:                     13.10
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):            0.00124
+Time:                        18:16:37   Log-Likelihood:                 47.311
+No. Observations:                  13   AIC:                            -86.62
+Df Residuals:                       9   BIC:                            -84.36
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.0428      0.006      7.735      0.000       0.030       0.055
+Trend           0.0045      0.002      2.455      0.036       0.000       0.009
+D2018          -0.0081      0.014     -0.560      0.589      -0.041       0.025
+D2018_Trend -3.698e-05      0.002     -0.016      0.988      -0.005       0.005
+==============================================================================
+Omnibus:                        5.127   Durbin-Watson:                   2.493
+Prob(Omnibus):                  0.077   Jarque-Bera (JB):                2.036
+Skew:                           0.782   Prob(JB):                        0.361
+Kurtosis:                       4.147   Cond. No.                         67.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+===== Theil_Exp (N=13) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              Theil_Exp   R-squared:                       0.796
+Model:                            OLS   Adj. R-squared:                  0.728
+Method:                 Least Squares   F-statistic:                     11.73
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):            0.00184
+Time:                        18:16:37   Log-Likelihood:                 45.324
+No. Observations:                  13   AIC:                            -82.65
+Df Residuals:                       9   BIC:                            -80.39
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.0432      0.006      6.706      0.000       0.029       0.058
+Trend           0.0046      0.002      2.157      0.059      -0.000       0.009
+D2018          -0.0091      0.017     -0.539      0.603      -0.047       0.029
+D2018_Trend     0.0003      0.003      0.104      0.920      -0.006       0.006
+==============================================================================
+Omnibus:                        5.348   Durbin-Watson:                   2.497
+Prob(Omnibus):                  0.069   Jarque-Bera (JB):                2.156
+Skew:                           0.779   Prob(JB):                        0.340
+Kurtosis:                       4.245   Cond. No.                         67.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+===== CV_Exp (N=13) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 CV_Exp   R-squared:                       0.811
+Model:                            OLS   Adj. R-squared:                  0.747
+Method:                 Least Squares   F-statistic:                     12.83
+Date:                Mon, 27 Jul 2026   Prob (F-statistic):            0.00133
+Time:                        18:16:37   Log-Likelihood:                 31.298
+No. Observations:                  13   AIC:                            -54.60
+Df Residuals:                       9   BIC:                            -52.34
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.3013      0.019     15.900      0.000       0.258       0.344
+Trend           0.0153      0.006      2.443      0.037       0.001       0.029
+D2018          -0.0106      0.049     -0.214      0.835      -0.122       0.101
+D2018_Trend    -0.0018      0.008     -0.221      0.830      -0.020       0.016
+==============================================================================
+Omnibus:                        3.774   Durbin-Watson:                   2.448
+Prob(Omnibus):                  0.152   Jarque-Bera (JB):                1.279
+Skew:                           0.637   Prob(JB):                        0.528
+Kurtosis:                       3.860   Cond. No.                         67.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
