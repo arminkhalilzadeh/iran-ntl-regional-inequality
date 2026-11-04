@@ -9,10 +9,11 @@
 **M.Sc. thesis in Economics, Sharif University of Technology**<br>
 **Author:** Armin Khalilzadeh · **Supervisor:** Dr. Saeed Tajrishy
 
-This project tracks how **spatial (inter-provincial) inequality** in Iran has changed over three decades
-and compares it with **interpersonal inequality** (the national Gini coefficient). Provincial GDP is the
-main measure of economic activity. Satellite **nighttime lights (NTL)** fill the years with no official
-provincial accounts.
+This repository contains the code and results for my M.Sc. thesis on spatial inequality across Iran's
+31 provinces. It validates VIIRS nighttime lights (2012–2024) against provincial GDP and household
+expenditure, and computes population-weighted inequality indices with structural-break tests. To run it,
+install `requirements.txt`, put the input data in `data/` as described in `data/README.md`, then run the
+scripts in `src/data_prep/` and the notebooks in `notebooks/`.
 
 <p align="center">
   <img src="output/Iran_NTL-overview/Iran_Pro_Map_2024.png" width="640" alt="VIIRS nighttime radiance over Iran, 2024">
@@ -26,10 +27,11 @@ regions. Iran's national Gini coefficient has been reported since 1984. It staye
 the late 2000s, fell to 0.365 in 2013 and then rose again. No comparable long-run series exists for
 spatial inequality, because official provincial GDP covers only part of the period.
 
-This thesis builds such a series. It estimates the relationship between NTL and provincial GDP over the
-years in which both are observed. That relationship is then used to predict provincial GDP for the
-missing years, following Lessmann & Seidel (2017). Population-weighted inequality indices are computed
-from the completed panel and compared with the national Gini. The aim is to find the turning points and
+This thesis aims to build such a series. It estimates the relationship between NTL and provincial GDP
+over the years in which both are observed. Using that relationship to predict provincial GDP for the
+missing years, following Lessmann & Seidel (2017), is in progress. Population-weighted inequality indices
+are computed for the years with data; extending them to the completed panel and comparing them with the
+national Gini is in progress. The aim is to find the turning points and
 the periods in which the two kinds of inequality moved together or diverged.
 
 📄 A fuller English summary of the proposal is in [`docs/proposal_summary.md`](docs/proposal_summary.md).
@@ -53,7 +55,7 @@ the periods in which the two kinds of inequality moved together or diverged.
 
 Deviations from the NTL–GDP relationship follow a pattern. Dense provinces (Tehran, Alborz, Gilan) rank
 lower on NTL per capita than on GDP per capita. Sparsely populated provinces (Sistan and Baluchestan,
-South Khorasan) rank higher. This is why the prediction model includes province fixed effects.
+South Khorasan) rank higher. This is why the planned prediction model includes province fixed effects.
 
 <p align="center">
   <img src="output/Validation/Comovement%20of%20GDP%20and%20NTL%20(Quarterly).png" width="49%" alt="Quarterly co-movement of GDP and NTL">
@@ -69,12 +71,13 @@ South Khorasan) rank higher. This is why the prediction model includes province 
 
    $$\ln(GDP_{it}) = \alpha + \beta \ln(NTL_{it}) + \mu_i + \gamma t + \varepsilon_{it}$$
 
-   Backcasting and out-of-sample tests of the model are in progress. A second series combines GDP and NTL
-   with optimal weights (Henderson, Storeygard & Weil, 2012) as a robustness check.
+   Using this model to predict provincial GDP for years without official accounts is in progress, as are
+   backcasting and out-of-sample tests of the model. A second series that combines GDP and NTL with
+   optimal weights (Henderson, Storeygard & Weil, 2012), as a robustness check, is also in progress.
 3. **Spatial inequality indices.** Population-weighted Gini, Theil and generalized entropy
    (GE(−1), MLD), plus the coefficient of variation. Each is computed with and without gas-flare areas,
    and tested for a structural break at the 2018 U.S. withdrawal from the JCPOA.
-4. **Comparing the two dimensions.** Correlation in levels and first differences, turning points, and
+4. **Comparing the two dimensions (in progress).** Correlation in levels and first differences, turning points, and
    lead–lag co-movement between spatial inequality and the national Gini. The analysis is descriptive
    and makes no causal claims.
 
