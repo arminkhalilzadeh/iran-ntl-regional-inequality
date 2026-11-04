@@ -63,13 +63,13 @@ South Khorasan) rank higher. This is why the prediction model includes province 
 ## Methodology
 
 1. **Building the panel.** Annual provincial NTL is extracted from VIIRS with Google Earth Engine for
-   2012–2024 (1391–1403). It is extended back to 1992 (1371) with the harmonized DMSP series and merged
-   with provincial GDP (Statistical Centre of Iran, constant 2021 prices) and population.
+   2012–2024 (1391–1403). It is merged with provincial GDP (Statistical Centre of Iran, constant 2021
+   prices) and population. Extension to 1992 (1371) with harmonized DMSP data is in progress.
 2. **Predicting provincial GDP from NTL.**
 
    $$\ln(GDP_{it}) = \alpha + \beta \ln(NTL_{it}) + \mu_i + \gamma t + \varepsilon_{it}$$
 
-   The model is checked with backcasting and out-of-sample tests. A second series combines GDP and NTL
+   Backcasting and out-of-sample tests of the model are in progress. A second series combines GDP and NTL
    with optimal weights (Henderson, Storeygard & Weil, 2012) as a robustness check.
 3. **Spatial inequality indices.** Population-weighted Gini, Theil and generalized entropy
    (GE(−1), MLD), plus the coefficient of variation. Each is computed with and without gas-flare areas,
@@ -135,7 +135,7 @@ resolved relative to the repository root.
 
 ## Data sources
 
-- **Nighttime lights:** VIIRS (2012–2024) and harmonized DMSP (from 1992), via Google Earth Engine
+- **Nighttime lights:** VIIRS (2012–2024), via Google Earth Engine; extension to 1992 with harmonized DMSP data is in progress
 - **Provincial and national accounts, population, CPI, national Gini:** Statistical Centre of Iran
 - **Household expenditure:** Household Income and Expenditure Survey (HIES), via [`hbsir`](https://pypi.org/project/hbsir/)
 
