@@ -15,6 +15,14 @@ expenditure, and computes population-weighted inequality indices with structural
 install `requirements.txt`, put the input data in `data/` as described in `data/README.md`, then run the
 scripts in `src/data_prep/` and the notebooks in `notebooks/`.
 
+## 📄 Documents
+
+| | |
+|---|---|
+| **[Writing sample (PDF, 7 pp.)](docs/Khalilzadeh_Writing_Sample_NTL_Iran.pdf)** | *Measuring Spatial Inequality in Iran with Nighttime Lights: Validation, Gas Flaring and the Limits of a Satellite Proxy.* Preliminary results from this repository, November 2026. |
+| **[Thesis proposal (PDF, 30 pp.)](docs/Khalilzadeh_Thesis_Proposal.pdf)** | *Places and People: The Evolution of Spatial Inequality in Iran and Its Relation to Interpersonal Inequality.* English version, November 2026 ([LaTeX source](docs/proposal_latex/)). |
+| [Proposal summary](docs/proposal_summary.md) | A short English summary of the research design. |
+
 <p align="center">
   <img src="output/Iran_NTL-overview/Iran_Pro_Map_2024.png" width="640" alt="VIIRS nighttime radiance over Iran, 2024">
 </p>
@@ -27,11 +35,11 @@ regions. Iran's national Gini coefficient has been reported since 1984. It staye
 the late 2000s, fell to 0.365 in 2013 and then rose again. No comparable long-run series exists for
 spatial inequality, because official provincial GDP covers only part of the period.
 
-This thesis aims to build such a series. It estimates the relationship between NTL and provincial GDP
-over the years in which both are observed. Using that relationship to predict provincial GDP for the
-missing years, following Lessmann & Seidel (2017), is in progress. Population-weighted inequality indices
-are computed for the years with data; extending them to the completed panel and comparing them with the
-national Gini is in progress. The aim is to find the turning points and
+This thesis aims to build such a series. So far it estimates the relationship between NTL and provincial
+GDP over the years in which both are observed (2012–2021). The next step is to use that relationship to
+predict provincial GDP for the missing years, following Lessmann & Seidel (2017). Population-weighted
+inequality indices are computed for the years with data; extending them to the completed panel and
+comparing them with the national Gini are planned. The aim is to find the turning points and
 the periods in which the two kinds of inequality moved together or diverged.
 
 📄 A fuller English summary of the proposal is in [`docs/proposal_summary.md`](docs/proposal_summary.md).
@@ -47,7 +55,9 @@ the periods in which the two kinds of inequality moved together or diverged.
 |---|---|
 | National: log quarterly GDP on log NTL (51 quarters) | Elasticity **0.239*** (SE 0.031), R² = 0.544 |
 | National: non-oil GDP | Elasticity **0.246*** (SE 0.036), almost the same, so NTL does not just reflect oil activity |
-| Provincial: log GDP on log NTL with province fixed effects (310 province-years) | Elasticity **0.996*** (SE 0.040), R² = 0.674, Pearson r = 0.821, which is close to one-to-one |
+| Provincial, per capita: pooled log GDP pc on log NTL pc (310 province-years) | Elasticity **0.637*** , R² = 0.499 |
+| Provincial, total levels: pooled log GDP on log total radiance (310 province-years) | Elasticity **0.996*** (SE 0.040), R² = 0.674, Pearson r = 0.821, close to one-to-one |
+| Provincial, two-way fixed effects (province and year) | Elasticity **0.361**\*\* (SE 0.138); 0.227 (n.s.) when the four gas-flare provinces are excluded |
 | Provincial growth, 2012–2021 (1391–1400) | Slope **0.356**\*\* (SE 0.144), R² = 0.175 |
 | Rank concordance (GDP pc vs NTL pc) | Spearman ρ between **0.52 and 0.67** in every year (p < 0.01) |
 
@@ -56,6 +66,17 @@ the periods in which the two kinds of inequality moved together or diverged.
 Deviations from the NTL–GDP relationship follow a pattern. Dense provinces (Tehran, Alborz, Gilan) rank
 lower on NTL per capita than on GDP per capita. Sparsely populated provinces (Sistan and Baluchestan,
 South Khorasan) rank higher. This is why the planned prediction model includes province fixed effects.
+
+Three further findings shape the design (details in the [writing sample](docs/Khalilzadeh_Writing_Sample_NTL_Iran.pdf)):
+
+- **Gas flaring dominates measured inequality.** Excluding Bushehr, Khuzestan, Ilam and Kohgiluyeh and
+  Boyer-Ahmad lowers the lights-based Gini from 0.393 to 0.245 (2012).
+- **Places and people diverge.** Between-province inequality in real household expenditure (HIES, excluding
+  flare provinces) rose from 0.160 in 2012 to 0.236 in 2024, while the GDP-based Gini stayed at 0.22–0.24
+  over 2012–2021.
+- **Lights are not welfare.** Within several provinces, lights rose while real expenditure fell (correlation
+  −0.78 in East Azerbaijan, −0.63 in Lorestan). A 2017 jump in the lights-based Gini is probably a
+  measurement artefact and is being checked. A structural-break test at 2018 is not significant.
 
 <p align="center">
   <img src="output/Validation/Comovement%20of%20GDP%20and%20NTL%20(Quarterly).png" width="49%" alt="Quarterly co-movement of GDP and NTL">
@@ -66,18 +87,18 @@ South Khorasan) rank higher. This is why the planned prediction model includes p
 
 1. **Building the panel.** Annual provincial NTL is extracted from VIIRS with Google Earth Engine for
    2012–2024 (1391–1403). It is merged with provincial GDP (Statistical Centre of Iran, constant 2021
-   prices) and population. Extension to 1992 (1371) with harmonized DMSP data is in progress.
+   prices) and population. Extension to 1992 (1371) with harmonized DMSP data is the planned next step.
 2. **Predicting provincial GDP from NTL.**
 
    $$\ln(GDP_{it}) = \alpha + \beta \ln(NTL_{it}) + \mu_i + \gamma t + \varepsilon_{it}$$
 
-   Using this model to predict provincial GDP for years without official accounts is in progress, as are
-   backcasting and out-of-sample tests of the model. A second series that combines GDP and NTL with
-   optimal weights (Henderson, Storeygard & Weil, 2012), as a robustness check, is also in progress.
+   The plan is to use this model to predict provincial GDP for years without official accounts and to test
+   it by backcasting. A second series that combines GDP and NTL with optimal weights (Henderson,
+   Storeygard & Weil, 2012) is planned as a robustness check.
 3. **Spatial inequality indices.** Population-weighted Gini, Theil and generalized entropy
    (GE(−1), MLD), plus the coefficient of variation. Each is computed with and without gas-flare areas,
-   and tested for a structural break at the 2018 U.S. withdrawal from the JCPOA.
-4. **Comparing the two dimensions (in progress).** Correlation in levels and first differences, turning points, and
+   and tested for a structural break at the 2018 U.S. withdrawal from the JCPOA (not significant).
+4. **Comparing the two dimensions (planned).** Correlation in levels and first differences, turning points, and
    lead–lag co-movement between spatial inequality and the national Gini. The analysis is descriptive
    and makes no causal claims.
 
@@ -86,7 +107,7 @@ South Khorasan) rank higher. This is why the planned prediction model includes p
 ```
 .
 ├── data/                  # Inputs (only shapefile and small files tracked; see data/README.md)
-├── docs/                  # English proposal summary
+├── docs/                  # Writing sample, thesis proposal (PDF + LaTeX) and summary
 ├── src/
 │   ├── data_prep/         # Scripts that build the NTL, population and GDP panels
 │   └── figures/           # Scripts for provincial bar charts and maps
@@ -138,7 +159,7 @@ resolved relative to the repository root.
 
 ## Data sources
 
-- **Nighttime lights:** VIIRS (2012–2024), via Google Earth Engine; extension to 1992 with harmonized DMSP data is in progress
+- **Nighttime lights:** VIIRS (2012–2024), via Google Earth Engine; extension to 1992 with harmonized DMSP data is planned
 - **Provincial and national accounts, population, CPI, national Gini:** Statistical Centre of Iran
 - **Household expenditure:** Household Income and Expenditure Survey (HIES), via [`hbsir`](https://pypi.org/project/hbsir/)
 

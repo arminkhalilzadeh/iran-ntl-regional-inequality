@@ -7,7 +7,8 @@ M.Sc. thesis proposal, Graduate School of Management and Economics, Sharif Unive
 (September 2026)<br>
 Author: Armin Khalilzadeh · Supervisor: Dr. Saeed Tajrishy
 
-> This is a condensed English summary. The full proposal (in Persian) is available on request.
+> This is a condensed summary. The full English proposal (November 2026) is
+> [here (PDF)](Khalilzadeh_Thesis_Proposal.pdf), with its [LaTeX source](proposal_latex/).
 
 ## 1. Motivation
 
@@ -70,8 +71,8 @@ external shocks. This project builds that series, with NTL filling the gaps in o
 | Population | Census and intercensal estimates | persons | Statistical Centre of Iran |
 
 The panel covers 31 provinces (current administrative boundaries). It has 403 province-years for NTL
-(2012–2024) and 310–341 for provincial GDP. The main period uses VIIRS (2012–2024). It is extended to 1992
-with harmonized DMSP data. All boundaries are kept fixed to the current provinces, so province splits over
+(2012–2024) and 310–341 for provincial GDP. The main period uses VIIRS (2012–2024). Extending it to 1992
+with harmonized DMSP data is planned. All boundaries are kept fixed to the current provinces, so province splits over
 time do not create artificial breaks.
 
 ## 5. Preliminary findings
@@ -79,9 +80,10 @@ time do not create artificial breaks.
 - **National level.** Quarterly GDP has an elasticity of **0.239** with respect to total radiance
   (p < 0.01, R² = 0.544, 51 quarters). For non-oil GDP the elasticity is **0.246**, so NTL reflects
   general economic activity and not just oil-related lighting.
-- **Provincial level.** With province fixed effects, the elasticity of GDP with respect to NTL is
-  **0.996** (SE 0.040, R² = 0.674, 310 observations). The relationship is close to proportional, which
-  supports using it for prediction.
+- **Provincial level.** In a pooled regression of total levels, the elasticity of GDP with respect to NTL
+  is **0.996** (SE 0.040, R² = 0.674, 310 observations), close to proportional (per capita: 0.637). With
+  province and year fixed effects it falls to **0.361** (SE 0.138), and to 0.227 (not significant) without
+  the four gas-flare provinces, so the within-province signal is weaker.
 - **Growth.** Annual growth in NTL per capita predicts growth in GDP per capita (slope 0.356, SE 0.144),
   but explains only part of the cross-provincial variation (R² = 0.175).
 - **Ranks.** The Spearman correlation between provincial ranks by GDP per capita and by NTL per capita
